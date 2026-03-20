@@ -8,6 +8,7 @@ No complex theory, just the **must-know commands**:
 - `git add`
 - `git commit -m`
 - `git status`
+-  `git clone`
 - `git push` / `git pull`
 - `git checkout` + basic `branch` / `merge`
 
