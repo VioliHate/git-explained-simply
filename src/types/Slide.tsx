@@ -1,0 +1,8 @@
+import React from "react";
+
+export interface Slide {
+  id: number;
+  title: string;
+  content: React.ReactNode;
+  type: "intro" | "concept" | "terminal" | "summary";
+}
