@@ -23,11 +23,9 @@ i18n
             tip: "Use keyboard arrows to navigate",
           },
           intro: {
-            badge: "Now you are a Team Player!",
-            title: "Git: Working in a Team",
             subtitle:
-              "Ok, now that you know how to work alone, let's see how it's done in a team...",
-            start: "Start Presentation",
+              "A quick, intuitive guide with silly examples to help you no longer be afraid of the terminal.",
+            start: "The journey begins",
           },
           i18n: {
             for: "for",
@@ -124,11 +122,9 @@ i18n
             tip: "Usa le frecce della tastiera per navigare",
           },
           intro: {
-            badge: "Ora sei un Team Player!",
-            title: "Git: Lavorare in Squadra",
             subtitle:
-              "Ok, ora che sai lavorare da solo, vediamo come si fa in squadra...",
-            start: "Inizia Presentazione",
+              'Una guida veloce, intuitiva e con esempi "scemi" per non aver più paura del terminale.',
+            start: "Inizia il viaggio",
           },
           i18n: {
             for: "per",

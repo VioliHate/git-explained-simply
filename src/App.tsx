@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Header } from "./components/Header";
 import { getSlides } from "./data/slides";
 import { Navigation } from "./components/Navigation";
+import { Main } from "./components/Main";
 
 export default function App() {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ export default function App() {
   return (
     <div className='min-h-screen flex flex-col overflow-hidden'>
       <Header currentSlide={currentSlide} totalSlides={slides.length} />
+      <Main currentSlide={currentSlide} slides={slides} />
       <Navigation
         currentSlide={currentSlide}
         totalSlides={slides.length}
