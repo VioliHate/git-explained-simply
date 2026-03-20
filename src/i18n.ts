@@ -37,7 +37,9 @@ i18n
             commands: "Essential Commands",
             history: "History",
             summary_title: "Summary",
-            time_machine_title: "It's like a Time Machine for your files.",
+            time_machine_title_start: "It's like a",
+            time_machine_title: "Time Machine",
+            time_machine_title_end: "for your files.",
             time_machine_desc:
               'Imagine writing a love letter.\n You write: "You are beautiful".\n Then you change it to: "You are nice".\n Then you regret it and want to go back.\n\n ',
             no_git: "Without Git:",
@@ -141,8 +143,9 @@ i18n
             commands: "Comandi Essenziali",
             history: "Cronologia",
             summary_title: "Riassunto",
-            time_machine_title:
-              "È come una Macchina del Tempo per i tuoi file.",
+            time_machine_title_start: "È come una",
+            time_machine_title: "Macchina del Tempo",
+            time_machine_title_end: "per i tuoi file.",
             time_machine_desc:
               'Immagina di scrivere una lettera d\'amore.\nScrivi: "Sei bellissima".\nPoi cambi in: "Sei simpatica".\nPoi ti penti e vuoi tornare indietro.\n\n',
             no_git: "Senza Git:",
