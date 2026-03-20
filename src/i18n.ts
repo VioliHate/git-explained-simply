@@ -32,14 +32,19 @@ i18n
             humans: "Humans",
           },
           slides: {
-            concepts: "Core Concepts",
+            concepts: "What is Git? (Silly Example #1)",
             workflow: "Team Workflow",
             commands: "Essential Commands",
             history: "History",
             summary_title: "Summary",
             time_machine_title: "It's like a Time Machine for your files.",
             time_machine_desc:
-              'Imagine writing a love letter. You write: "You are beautiful". Then you change it to: "You are nice". Then you regret it and want to go back. Without Git: You have to delete and hope to remember. With Git: You take a "photo" of each version and go back whenever you want.',
+              'Imagine writing a love letter.\n You write: "You are beautiful".\n Then you change it to: "You are nice".\n Then you regret it and want to go back.\n\n ',
+            no_git: "Without Git:",
+            no_git_desc: "You have to delete and hope to remember.\n",
+            yes_git: "With Git:",
+            yes_git_desc:
+              'You take a "photo" of each version and go back whenever you want.',
             v1: 'Version 1: "You are beautiful"',
             v2: 'Version 2: "You are nice"',
             save_concept: "The concept of Saving",
@@ -131,7 +136,7 @@ i18n
             humans: "Umani",
           },
           slides: {
-            concepts: "Concetti Base",
+            concepts: "Cos'è Git? (Esempio Scemo #1)",
             workflow: "Workflow di Squadra",
             commands: "Comandi Essenziali",
             history: "Cronologia",
@@ -139,7 +144,12 @@ i18n
             time_machine_title:
               "È come una Macchina del Tempo per i tuoi file.",
             time_machine_desc:
-              'Immagina di scrivere una lettera d\'amore. Scrivi: "Sei bellissima". Poi cambi in: "Sei simpatica". Poi ti penti e vuoi tornare indietro. Senza Git: Devi cancellare e sperare di ricordare. Con Git: Fai una "foto" a ogni versione e torni indietro quando vuoi.',
+              'Immagina di scrivere una lettera d\'amore.\nScrivi: "Sei bellissima".\nPoi cambi in: "Sei simpatica".\nPoi ti penti e vuoi tornare indietro.\n\n',
+            no_git: "Senza Git:",
+            no_git_desc: "Devi cancellare e sperare di ricordare.\n",
+            yes_git: "Con Git:",
+            yes_git_desc:
+              'Fai una "foto" a ogni versione e torni indietro quando vuoi.',
             v1: 'Versione 1: "Sei bellissima"',
             v2: 'Versione 2: "Sei simpatica"',
             save_concept: "Il concetto del Salvataggio",
