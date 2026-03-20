@@ -1,0 +1,223 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: "it",
+    debug: false,
+    interpolation: {
+      escapeValue: false,
+    },
+    resources: {
+      en: {
+        translation: {
+          header: {
+            title: "Git Explained Simply",
+          },
+          navigation: {
+            prev: "Previous slide",
+            next: "Next slide",
+            tip: "Use keyboard arrows to navigate",
+          },
+          intro: {
+            badge: "Now you are a Team Player!",
+            title: "Git: Working in a Team",
+            subtitle:
+              "Ok, now that you know how to work alone, let's see how it's done in a team...",
+            start: "Start Presentation",
+          },
+          i18n: {
+            for: "for",
+            humans: "Humans",
+          },
+          slides: {
+            concepts: "Core Concepts",
+            workflow: "Team Workflow",
+            commands: "Essential Commands",
+            history: "History",
+            summary_title: "Summary",
+            time_machine_title: "It's like a Time Machine for your files.",
+            time_machine_desc:
+              'Imagine writing a love letter. You write: "You are beautiful". Then you change it to: "You are nice". Then you regret it and want to go back. Without Git: You have to delete and hope to remember. With Git: You take a "photo" of each version and go back whenever you want.',
+            v1: 'Version 1: "You are beautiful"',
+            v2: 'Version 2: "You are nice"',
+            save_concept: "The concept of Saving",
+            videogame_analogy: "Think of Git as a video game.",
+            edit: "Edit",
+            edit_desc:
+              "You are playing (writing code). You just beat a mini-boss.",
+            stage: "Stage (Add)",
+            stage_desc:
+              "You stop at the save point. You are deciding what to save.",
+            commit: "Commit",
+            commit_desc:
+              'You press "Save Game". Now that moment is carved in stone.',
+            base_commands: "Base Commands",
+            base_commands_desc: "Few, simple, powerful.",
+            init_title: "Initialize a project",
+            init_output:
+              "Initialized empty Git repository in /Users/me/project/.git/",
+            init_human: '"Hey Git, keep an eye on this folder!"',
+            add_title: "Prepare files",
+            add_output: "(No output, Git is shy but added everything)",
+            add_human: '"Put these files in the box of ready-to-save items."',
+            commit_title: "Save (Commit)",
+            commit_output_1: "[main (root-commit) 4a2b1c] Added logo",
+            commit_output_2: " 1 file changed, 10 insertions(+)",
+            commit_human:
+              '"Save now and write a label to remember what you did."',
+            push_title: "Send online (Push)",
+            push_human:
+              '"Send everything to the internet so I don\'t lose it if the PC explodes."',
+            sum_init_title: "Create the warehouse",
+            sum_init_desc: "Start tracking files.",
+            sum_add_title: "Prepare the package",
+            sum_add_desc: "Choose what to save.",
+            sum_commit_title: "Close the package",
+            sum_commit_desc: "Save with a message.",
+            sum_push_title: "Ship the package",
+            sum_push_desc: "Send everything to GitHub.",
+            mission_complete: "Mission Accomplished!",
+            mission_desc:
+              "You learned the basics of managing your projects like a pro. No more lost files or confused versions!",
+            team_title: "Git is like a Shared Document but smarter.",
+            team_desc:
+              'Imagine writing a book with four hands. Everyone has their own copy on their PC. The problem: How do we not overwrite each other\'s work? The solution: We use a "Server" (like GitHub) that acts as a referee.',
+            referee: "The Referee",
+            you: "YOU",
+            him: "HIM",
+            clone_title: "Download everything (Clone)",
+            clone_human:
+              '"I want an exact copy of this project on my PC, now!"',
+            note: "Note",
+            clone_note:
+              "`clone` is done only once at the beginning. It's like buying the book.",
+            fetch_title: "Check for news (Fetch)",
+            fetch_human:
+              '"Hey Git, see if my friend uploaded anything new, but don\'t change my files."',
+            pull_title: "Download and Merge (Pull)",
+            pull_human:
+              '"Ok, download the news and merge them immediately with my work."',
+            sum_clone_title: "Initial Copy",
+            sum_clone_desc: "Download the project for the first time.",
+            sum_fetch_title: "Peek",
+            sum_fetch_desc: "Look if there are news without downloading them.",
+            sum_pull_title: "Update",
+            sum_pull_desc: "Download and merge news to your code.",
+            team_summary_desc:
+              "You know how to work alone and how to collaborate with an entire team without making disasters.",
+            restart: "Restart from the beginning",
+          },
+        },
+      },
+      it: {
+        translation: {
+          header: {
+            title: "Git Spiegato Facile",
+          },
+          navigation: {
+            prev: "Slide precedente",
+            next: "Slide successiva",
+            tip: "Usa le frecce della tastiera per navigare",
+          },
+          intro: {
+            badge: "Ora sei un Team Player!",
+            title: "Git: Lavorare in Squadra",
+            subtitle:
+              "Ok, ora che sai lavorare da solo, vediamo come si fa in squadra...",
+            start: "Inizia Presentazione",
+          },
+          i18n: {
+            for: "per",
+            humans: "Umani",
+          },
+          slides: {
+            concepts: "Concetti Base",
+            workflow: "Workflow di Squadra",
+            commands: "Comandi Essenziali",
+            history: "Cronologia",
+            summary_title: "Riassunto",
+            time_machine_title:
+              "È come una Macchina del Tempo per i tuoi file.",
+            time_machine_desc:
+              'Immagina di scrivere una lettera d\'amore. Scrivi: "Sei bellissima". Poi cambi in: "Sei simpatica". Poi ti penti e vuoi tornare indietro. Senza Git: Devi cancellare e sperare di ricordare. Con Git: Fai una "foto" a ogni versione e torni indietro quando vuoi.',
+            v1: 'Versione 1: "Sei bellissima"',
+            v2: 'Versione 2: "Sei simpatica"',
+            save_concept: "Il concetto del Salvataggio",
+            videogame_analogy: "Pensa a Git come a un videogioco.",
+            edit: "Modifica",
+            edit_desc:
+              "Stai giocando (scrivendo codice). Hai appena battuto un mini-boss.",
+            stage: "Stage (Add)",
+            stage_desc:
+              "Ti fermi davanti al punto di salvataggio. Stai decidendo cosa salvare.",
+            commit: "Commit",
+            commit_desc:
+              'Premi "Salva Partita". Ora quel momento è scolpito nella pietra.',
+            base_commands: "I Comandi Base",
+            base_commands_desc: "Pochi, semplici, potenti.",
+            init_title: "Inizializzare un progetto",
+            init_output:
+              "Initialized empty Git repository in /Users/me/progetto/.git/",
+            init_human: '"Ehi Git, tieni d\'occhio questa cartella!"',
+            add_title: "Preparare i file",
+            add_output: "(Nessun output, Git è timido ma ha aggiunto tutto)",
+            add_human:
+              '"Metti questi file nella scatola dei pronti per il salvataggio."',
+            commit_title: "Salvare (Commit)",
+            commit_output_1: "[main (root-commit) 4a2b1c] Ho aggiunto il logo",
+            commit_output_2: " 1 file changed, 10 insertions(+)",
+            commit_human:
+              '"Salva ora e scrivi un\'etichetta per ricordarti cosa hai fatto."',
+            push_title: "Mandare online (Push)",
+            push_human:
+              '"Manda tutto su internet così non lo perdo se il PC esplode."',
+            sum_init_title: "Crea il magazzino",
+            sum_init_desc: "Inizia a tracciare i file.",
+            sum_add_title: "Prepara il pacco",
+            sum_add_desc: "Scegli cosa salvare.",
+            sum_commit_title: "Chiudi il pacco",
+            sum_commit_desc: "Salva con un messaggio.",
+            sum_push_title: "Spedisci il pacco",
+            sum_push_desc: "Manda tutto su GitHub.",
+            mission_complete: "Missione Compiuta!",
+            mission_desc:
+              "Hai imparato le basi per gestire i tuoi progetti come un vero professionista. Niente più file persi o versioni confuse!",
+            team_title:
+              "Git è come un Documento Condiviso ma più intelligente.",
+            team_desc:
+              'Immagina di scrivere un libro a quattro mani. Ognuno ha la sua copia sul proprio PC. Il problema: Come facciamo a non sovrascrivere il lavoro dell\'altro? La soluzione: Usiamo un "Server" (come GitHub) che fa da arbitro.',
+            referee: "L'Arbitro",
+            you: "TU",
+            him: "LUI",
+            clone_title: "Scaricare tutto (Clone)",
+            clone_human:
+              '"Voglio una copia esatta di questo progetto sul mio PC, ora!"',
+            note: "Nota",
+            clone_note:
+              "`clone` si fa una volta sola all'inizio. È come comprare il libro.",
+            fetch_title: "Controllare novità (Fetch)",
+            fetch_human:
+              '"Ehi Git, guarda se il mio amico ha caricato qualcosa di nuovo, ma non cambiare i miei file."',
+            pull_title: "Scaricare e Unire (Pull)",
+            pull_human:
+              '"Ok, scarica le novità e uniscile subito al mio lavoro."',
+            sum_clone_title: "Copia Iniziale",
+            sum_clone_desc: "Scarichi il progetto per la prima volta.",
+            sum_fetch_title: "Sbircia",
+            sum_fetch_desc: "Guardi se ci sono novità senza scaricarle.",
+            sum_pull_title: "Aggiorna",
+            sum_pull_desc: "Scarichi e unisci le novità al tuo codice.",
+            team_summary_desc:
+              "Sai come lavorare da solo e come collaborare con un intero team senza fare disastri.",
+            restart: "Ricomincia dall'inizio",
+          },
+        },
+      },
+    },
+  });
+
+export default i18n;
