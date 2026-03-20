@@ -33,7 +33,7 @@ i18n
           },
           slides: {
             concepts: "What is Git? (Silly Example #{{count}})",
-            workflow: "Team Workflow",
+            workflow: "Team Workflow (Silly Example #{{count}})",
             terminal: "The terminal: doesn't bite",
             save_share: "Save and Share",
             history: "History",
@@ -95,6 +95,14 @@ i18n
             referee: "The Referee",
             you: "YOU",
             him: "HIM",
+            workflow_title: "The concept of Sharing",
+            team_analogy: "Think of teamwork as a shared refrigerator.",
+            peek: "Peek (Fetch)",
+            peek_desc: "You look if someone put something new in the fridge.",
+            take: "Take (Pull)",
+            take_desc: "You take the news and add them to your plate.",
+            share: "Put (Push)",
+            share_desc: "You put your plate in the fridge for others.",
             clone_title: "Download everything (Clone)",
             clone_human:
               '"I want an exact copy of this project on my PC, now!"',
@@ -140,7 +148,7 @@ i18n
           },
           slides: {
             concepts: "Cos'è Git? (Esempio Scemo #{{count}})",
-            workflow: "Workflow di Squadra",
+            workflow: "Workflow di Squadra (Esempio Scemo #{{count}})",
             terminal: "Il terminale: non morde!",
             save_share: "Salva e Condividi",
             history: "Cronologia",
@@ -204,6 +212,16 @@ i18n
             referee: "L'Arbitro",
             you: "TU",
             him: "LUI",
+            workflow_title: "Il concetto della Condivisione",
+            team_analogy:
+              "Pensa al lavoro di squadra come a un frigorifero condiviso.",
+            peek: "Sbircia (Fetch)",
+            peek_desc:
+              "Guardi se qualcuno ha messo qualcosa di nuovo nel frigo.",
+            take: "Prendi (Pull)",
+            take_desc: "Prendi le novità e le aggiungi al tuo piatto.",
+            share: "Metti (Push)",
+            share_desc: "Metti il tuo piatto nel frigo per gli altri.",
             clone_title: "Scaricare tutto (Clone)",
             clone_human:
               '"Voglio una copia esatta di questo progetto sul mio PC, ora!"',
