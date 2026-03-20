@@ -1,4 +1,4 @@
-# Git Explained Simply 😄
+# Git Explained Simply 
 
 **Git Explained Simply** is a super-fun, ultra-light React presentation that teaches complete beginners what Git really is — using funny memes and everyday chaos.
 
