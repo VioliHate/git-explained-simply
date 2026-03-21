@@ -329,7 +329,11 @@ export const getSlides = (
       <section className='grid md:grid-cols-2 gap-8 items-center'>
         <article className='space-y-6'>
           <h2 className='text-4xl font-bold leading-tight'>
-            {t("slides.team_title")}
+            {t("slides.team_title_start")}
+            <Highlight color='bg-blue-100 text-blue-700'>
+              {t("slides.team_title")}
+            </Highlight>
+            {t("slides.team_title_end")}
           </h2>
           <Card className='bg-purple-50/50 border-purple-200'>
             <p className='text-lg text-zinc-700 leading-relaxed whitespace-pre-line'>
@@ -497,7 +501,7 @@ export const getSlides = (
   },
   {
     id: 10,
-    title: t("slides.summary_title"),
+    title: `${t("slides.summary_title", { count: 2 })}`,
     type: "summary",
     content: (
       <section className='space-y-8'>

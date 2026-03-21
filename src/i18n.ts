@@ -89,7 +89,9 @@ i18n
             mission_complete: "Mission Accomplished!",
             mission_desc:
               "You learned the basics of managing your projects like a pro. No more lost files or confused versions!",
-            team_title: "Git is like a Shared Document but smarter.",
+            team_title_start: "Git is like a",
+            team_title: "Shared Document",
+            team_title_end: "but smarter.",
             team_desc:
               "Imagine writing a book with four hands.\n Everyone has their own copy on their PC.\n",
             team_desc_problem: "The problem:",
@@ -211,8 +213,9 @@ i18n
             mission_complete: "Missione Compiuta!",
             mission_desc:
               "Hai imparato le basi per gestire i tuoi progetti come un vero professionista. Niente più file persi o versioni confuse!",
-            team_title:
-              "Git è come un Documento Condiviso ma più intelligente.",
+            team_title_start: "Git è come un",
+            team_title: "Documento Condiviso",
+            team_title_end: "ma più intelligente.",
             team_desc:
               "Immagina di scrivere un libro a quattro mani.\n Ognuno ha la sua copia sul proprio PC.\n",
             team_desc_problem: "Il problema:",
