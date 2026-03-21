@@ -332,8 +332,12 @@ export const getSlides = (
             {t("slides.team_title")}
           </h2>
           <Card className='bg-purple-50/50 border-purple-200'>
-            <p className='text-lg text-zinc-700 leading-relaxed'>
+            <p className='text-lg text-zinc-700 leading-relaxed whitespace-pre-line'>
               {t("slides.team_desc")}
+              <strong>{t("slides.team_desc_problem")}</strong>{" "}
+              {t("slides.team_desc_problem_resp")}
+              <strong>{t("slides.team_desc_solution")}</strong>{" "}
+              {t("slides.team_desc_solution_resp")}
             </p>
           </Card>
         </article>

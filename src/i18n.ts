@@ -91,7 +91,13 @@ i18n
               "You learned the basics of managing your projects like a pro. No more lost files or confused versions!",
             team_title: "Git is like a Shared Document but smarter.",
             team_desc:
-              'Imagine writing a book with four hands. Everyone has their own copy on their PC. The problem: How do we not overwrite each other\'s work? The solution: We use a "Server" (like GitHub) that acts as a referee.',
+              "Imagine writing a book with four hands.\n Everyone has their own copy on their PC.\n",
+            team_desc_problem: "The problem:",
+            team_desc_problem_resp:
+              "How do we not overwrite each other\'s work?\n",
+            team_desc_solution: " The solution:",
+            team_desc_solution_resp:
+              'We use a "Server" (like GitHub) that acts as a referee.',
             referee: "The Referee",
             you: "YOU",
             him: "HIM",
@@ -208,7 +214,13 @@ i18n
             team_title:
               "Git è come un Documento Condiviso ma più intelligente.",
             team_desc:
-              'Immagina di scrivere un libro a quattro mani. Ognuno ha la sua copia sul proprio PC. Il problema: Come facciamo a non sovrascrivere il lavoro dell\'altro? La soluzione: Usiamo un "Server" (come GitHub) che fa da arbitro.',
+              "Immagina di scrivere un libro a quattro mani.\n Ognuno ha la sua copia sul proprio PC.\n",
+            team_desc_problem: "Il problema:",
+            team_desc_problem_resp:
+              "Come facciamo a non sovrascrivere il lavoro dell'altro?\n",
+            team_desc_solution: " La soluzione:",
+            team_desc_solution_resp:
+              'Usiamo un "Server" (come GitHub) che fa da arbitro.',
             referee: "L'Arbitro",
             you: "TU",
             him: "LUI",
