@@ -11,12 +11,20 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({
   currentSlide,
   totalSlides,
+  onSlideChange,
 }) => {
   const { t, i18n } = useTranslation();
 
   const toggleLanguage = () => {
     const nextLang = i18n.language === "it" ? "en" : "it";
     i18n.changeLanguage(nextLang);
+  };
+
+  const handleSlideInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = parseInt(e.target.value, 10);
+    if (!isNaN(value) && value >= 1 && value <= totalSlides) {
+      onSlideChange(value - 1);
+    }
   };
 
   return (
@@ -48,6 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
             min={1}
             max={totalSlides}
             value={currentSlide + 1}
+            onChange={handleSlideInput}
             className='w-12 h-8 text-center text-sm font-mono font-bold bg-zinc-100 border-none rounded-lg focus:ring-2 focus:ring-emerald-500 transition-all'
           />
         </div>
