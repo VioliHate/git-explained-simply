@@ -29,7 +29,11 @@ export default function App() {
 
   return (
     <div className='min-h-screen flex flex-col overflow-hidden'>
-      <Header currentSlide={currentSlide} totalSlides={slides.length} />
+      <Header
+        currentSlide={currentSlide}
+        totalSlides={slides.length}
+        onSlideChange={setCurrentSlide}
+      />
       <Main currentSlide={currentSlide} slides={slides} />
       <Navigation
         currentSlide={currentSlide}

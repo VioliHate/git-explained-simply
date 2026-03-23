@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 interface HeaderProps {
   currentSlide: number;
   totalSlides: number;
+  onSlideChange: (slide: number) => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
