@@ -265,7 +265,7 @@ i18n
               "Scarichi e unisci la tua mappa con le scoperte degli altri",
             team_push_title: "Segna il tesoro",
             team_push_desc: "Aggiungi la tua 'X' alla mappa condivisa",
-            team_title: "Ora sei un Team Player! 🤝",
+            team_title: "Ora sei un Team Player!",
             team_desc:
               "Sai come lavorare da solo e come collaborare con un intero team senza fare disastri.",
           },
