@@ -198,7 +198,7 @@ export const getSlides = (
   },
   {
     id: 4,
-    title: t("slides.save_share"),
+    title: t("slides.terminal"),
     type: "terminal",
     content: (
       <section className='space-y-12'>
@@ -422,7 +422,7 @@ export const getSlides = (
   },
   {
     id: 8,
-    title: t("slides.commands"),
+    title: t("slides.terminal"),
     type: "terminal",
     content: (
       <section className='space-y-8'>
@@ -456,7 +456,7 @@ export const getSlides = (
   },
   {
     id: 9,
-    title: t("slides.commands"),
+    title: t("slides.terminal"),
     type: "terminal",
     content: (
       <section className='space-y-12'>
@@ -505,7 +505,7 @@ export const getSlides = (
     type: "summary",
     content: (
       <section className='space-y-8'>
-        <ul className='grid grid-cols-1 md:grid-cols-3 gap-4 list-none p-0'>
+        <ul className='grid grid-cols-1 md:grid-cols-2 gap-4 list-none p-0'>
           <Card
             as='li'
             className='flex flex-col items-center text-center gap-4'
@@ -548,6 +548,20 @@ export const getSlides = (
             </div>
             <h4 className='font-bold'>{t("slides.sum_pull_title")}</h4>
             <p className='text-zinc-500 text-sm'>{t("slides.sum_pull_desc")}</p>
+          </Card>
+          <Card as='li' className='flex items-start gap-4'>
+            <div
+              className='p-2 bg-amber-100 rounded-lg text-amber-600 font-bold font-mono'
+              aria-hidden='true'
+            >
+              PUSH
+            </div>
+            <div>
+              <h4 className='font-bold'>{t("slides.sum_team_push_title")}</h4>
+              <p className='text-zinc-500 text-sm'>
+                {t("slides.sum_push_desc")}
+              </p>
+            </div>
           </Card>
         </ul>
 
