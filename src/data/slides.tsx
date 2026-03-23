@@ -495,7 +495,7 @@ export const getSlides = (
   },
   {
     id: 10,
-    title: `${t("slides.summary_title", { count: 2 })}`,
+    title: `${t("summary.title", { count: 2 })}`,
     type: "summary",
     content: (
       <section className='space-y-8'>
