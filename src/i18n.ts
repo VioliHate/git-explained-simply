@@ -17,6 +17,7 @@ i18n
         translation: {
           header: {
             title: "Git Explained Simply",
+            go: "Go To",
           },
           navigation: {
             prev: "Previous slide",
@@ -145,6 +146,7 @@ i18n
         translation: {
           header: {
             title: "Git Spiegato Facile",
+            go: "Vai a",
           },
           navigation: {
             prev: "Slide precedente",
