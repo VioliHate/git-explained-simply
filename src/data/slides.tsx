@@ -250,7 +250,7 @@ export const getSlides = (
   },
   {
     id: 5,
-    title: `${t("slides.summary_title", { count: 1 })}`,
+    title: `${t("summary.title", { count: 1 })}`,
     type: "summary",
     content: (
       <section className='space-y-8'>
@@ -263,10 +263,8 @@ export const getSlides = (
               INIT
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_init_title")}</h4>
-              <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_init_desc")}
-              </p>
+              <h4 className='font-bold'>{t("summary.init_title")}</h4>
+              <p className='text-zinc-500 text-sm'>{t("summary.init_desc")}</p>
             </div>
           </Card>
           <Card as='li' className='flex items-start gap-4'>
@@ -277,10 +275,8 @@ export const getSlides = (
               ADD
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_add_title")}</h4>
-              <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_add_desc")}
-              </p>
+              <h4 className='font-bold'>{t("summary.add_title")}</h4>
+              <p className='text-zinc-500 text-sm'>{t("summary.add_desc")}</p>
             </div>
           </Card>
           <Card as='li' className='flex items-start gap-4'>
@@ -291,9 +287,9 @@ export const getSlides = (
               COMMIT
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_commit_title")}</h4>
+              <h4 className='font-bold'>{t("summary.commit_title")}</h4>
               <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_commit_desc")}
+                {t("summary.commit_desc")}
               </p>
             </div>
           </Card>
@@ -305,18 +301,16 @@ export const getSlides = (
               PUSH
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_push_title")}</h4>
-              <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_push_desc")}
-              </p>
+              <h4 className='font-bold'>{t("summary.push_title")}</h4>
+              <p className='text-zinc-500 text-sm'>{t("summary.push_desc")}</p>
             </div>
           </Card>
         </ul>
         <article className='bg-zinc-900 text-white p-8 rounded-3xl text-center border border-zinc-800 shadow-lg space-y-4'>
           <h3 className='text-2xl font-bold text-white'>
-            {t("slides.mission_complete")} 🚀
+            {t("summary.mission_title")} 🚀
           </h3>
-          <p className='text-zinc-400'>{t("slides.mission_desc")}</p>
+          <p className='text-zinc-400'>{t("summary.mission_desc")}</p>
         </article>
       </section>
     ),
