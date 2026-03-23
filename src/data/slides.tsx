@@ -506,50 +506,49 @@ export const getSlides = (
     content: (
       <section className='space-y-8'>
         <ul className='grid grid-cols-1 md:grid-cols-2 gap-4 list-none p-0'>
-          <Card
-            as='li'
-            className='flex flex-col items-center text-center gap-4'
-          >
+          <Card as='li' className='flex items-start gap-4'>
             <div
-              className='p-3 bg-purple-100 rounded-xl text-purple-600 font-bold font-mono'
+              className='p-2 bg-purple-100 rounded-lg text-purple-600 font-bold font-mono'
               aria-hidden='true'
             >
               CLONE
             </div>
-            <h4 className='font-bold'>{t("slides.sum_clone_title")}</h4>
-            <p className='text-zinc-500 text-sm'>
-              {t("slides.sum_clone_desc")}
-            </p>
+            <div>
+              <h4 className='font-bold'>{t("summary.team_clone_title")}</h4>
+              <p className='text-zinc-500 text-sm'>
+                {t("summary.team_clone_desc")}
+              </p>
+            </div>
           </Card>
-          <Card
-            as='li'
-            className='flex flex-col items-center text-center gap-4'
-          >
+          <Card as='li' className='flex items-start gap-4'>
             <div
-              className='p-3 bg-blue-100 rounded-xl text-blue-600 font-bold font-mono'
+              className='p-2 bg-blue-100 rounded-lg text-blue-600 font-bold font-mono'
               aria-hidden='true'
             >
               FETCH
             </div>
-            <h4 className='font-bold'>{t("slides.sum_fetch_title")}</h4>
-            <p className='text-zinc-500 text-sm'>
-              {t("slides.sum_fetch_desc")}
-            </p>
+            <div>
+              <h4 className='font-bold'>{t("summary.team_fetch_title")}</h4>
+              <p className='text-zinc-500 text-sm'>
+                {t("summary.team_fetch_desc")}
+              </p>
+            </div>
           </Card>
-          <Card
-            as='li'
-            className='flex flex-col items-center text-center gap-4'
-          >
+          <Card as='li' className='flex items-start gap-4'>
             <div
-              className='p-3 bg-emerald-100 rounded-xl text-emerald-600 font-bold font-mono'
+              className='p-2 bg-emerald-100 rounded-lg text-emerald-600 font-bold font-mono'
               aria-hidden='true'
             >
               PULL
             </div>
-            <h4 className='font-bold'>{t("slides.sum_pull_title")}</h4>
-            <p className='text-zinc-500 text-sm'>{t("slides.sum_pull_desc")}</p>
+            <div>
+              <h4 className='font-bold'>{t("summary.team_pull_title")}</h4>
+              <p className='text-zinc-500 text-sm'>
+                {t("summary.team_pull_desc")}
+              </p>
+            </div>
           </Card>
-          <Card as='li' className='flex items-start gap-4'>
+          <Card as='li' className='flex items-start gap-4 '>
             <div
               className='p-2 bg-amber-100 rounded-lg text-amber-600 font-bold font-mono'
               aria-hidden='true'
@@ -557,23 +556,17 @@ export const getSlides = (
               PUSH
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_team_push_title")}</h4>
+              <h4 className='font-bold'>{t("summary.team_push_title")}</h4>
               <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_push_desc")}
+                {t("summary.team_push_desc")}
               </p>
             </div>
           </Card>
         </ul>
 
         <article className='bg-zinc-900 text-white p-8 rounded-3xl text-center space-y-4'>
-          <h3 className='text-2xl font-bold'>{t("intro.badge")} 🤝</h3>
-          <p className='text-zinc-400'>{t("slides.team_summary_desc")}</p>
-          <button
-            onClick={() => setCurrentSlide(0)}
-            className='text-emerald-400 font-bold hover:underline'
-          >
-            {t("slides.restart")}
-          </button>
+          <h3 className='text-2xl font-bold'>{t("summary.team_title")} 🤝</h3>
+          <p className='text-zinc-400'>{t("summary.team_desc")}</p>
         </article>
       </section>
     ),

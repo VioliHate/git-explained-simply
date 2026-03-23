@@ -1,6 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { summary } from "motion/react-client";
 
 i18n
   .use(LanguageDetector)
@@ -122,19 +123,20 @@ i18n
             pull_title: "Download and Merge (Pull)",
             pull_human:
               '"Ok, download the news and merge them immediately with my work."',
-            sum_clone_title: "Grab the map",
-            sum_clone_desc: "Get your initial copy for the adventure.",
-            sum_fetch_title: "Peek",
-            sum_fetch_desc:
+          },
+          summary: {
+            team_clone_title: "Grab the map",
+            team_clone_desc: "Get your initial copy for the adventure.",
+            team_fetch_title: "Peek",
+            team_fetch_desc:
               "Check from afar if there are new points of interest on the master map.",
-            sum_pull_title: "Update the map",
-            sum_pull_desc:
+            team_pull_title: "Update the map",
+            team_pull_desc:
               "Download and merge your map with others' discoveries",
-            sum_team_push_title: "Mark the treasure",
-            sum_team_push_desc: "Add your 'X' to the shared map",
-            team_summary_desc:
+            team_push_title: "Mark the treasure",
+            team_push_desc: "Add your 'X' to the shared map",
+            team_desc:
               "You know how to work alone and how to collaborate with an entire team without making disasters",
-            restart: "Restart from the beginning",
           },
         },
       },
@@ -251,19 +253,21 @@ i18n
             pull_title: "Scaricare e Unire (Pull)",
             pull_human:
               '"Ok, scarica le novità e uniscile subito al mio lavoro."',
-            sum_clone_title: "Prendi la mappa",
-            sum_clone_desc: "Ottieni la tua copia iniziale per l'avventura.",
-            sum_fetch_title: "Sbircia",
-            sum_fetch_desc:
-              "Guarda da lontano se ci sono nuovi punti d'interesse sulla mappa master.",
-            sum_pull_title: "Aggiorna la mappa",
-            sum_pull_desc:
+          },
+          summary: {
+            team_clone_title: "Prendi la mappa",
+            team_clone_desc: "Ottieni la tua copia iniziale per l'avventura.",
+            team_fetch_title: "Sbircia",
+            team_fetch_desc:
+              "Guarda da lontano se ci sono nuovi punti d'interesse sulla mappa principale.",
+            team_pull_title: "Aggiorna la mappa",
+            team_pull_desc:
               "Scarichi e unisci la tua mappa con le scoperte degli altri",
-            sum_team_push_title: "Segna il tesoro",
-            sum_team_push_desc: "Aggiungi la tua 'X' alla mappa condivisa",
-            team_summary_desc:
+            team_push_title: "Segna il tesoro",
+            team_push_desc: "Aggiungi la tua 'X' alla mappa condivisa",
+            team_title: "Ora sei un Team Player! 🤝",
+            team_desc:
               "Sai come lavorare da solo e come collaborare con un intero team senza fare disastri.",
-            restart: "Ricomincia dall'inizio",
           },
         },
       },
