@@ -122,7 +122,7 @@ i18n
             commit_desc: "Save with a message.",
             push_title: "Ship the package",
             push_desc: "Send everything to GitHub.",
-            mission_complete: "Mission Accomplished!",
+            mission_title: "Mission Accomplished!",
             mission_desc:
               "You learned the basics of managing your projects like a pro. No more lost files or confused versions!",
             team_clone_title: "Grab the map",
