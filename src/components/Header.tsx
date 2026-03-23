@@ -39,6 +39,18 @@ export const Header: React.FC<HeaderProps> = ({
       </div>
 
       <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-2'>
+          <span className='text-[10px] uppercase font-bold text-zinc-400 tracking-widest'>
+            Go to:
+          </span>
+          <input
+            type='number'
+            min={1}
+            max={totalSlides}
+            value={currentSlide + 1}
+            className='w-12 h-8 text-center text-sm font-mono font-bold bg-zinc-100 border-none rounded-lg focus:ring-2 focus:ring-emerald-500 transition-all'
+          />
+        </div>
         <div
           className='h-1.5 w-32 bg-zinc-100 rounded-full overflow-hidden'
           role='progressbar'
