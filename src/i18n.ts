@@ -122,14 +122,18 @@ i18n
             pull_title: "Download and Merge (Pull)",
             pull_human:
               '"Ok, download the news and merge them immediately with my work."',
-            sum_clone_title: "Initial Copy",
-            sum_clone_desc: "Download the project for the first time.",
+            sum_clone_title: "Grab the map",
+            sum_clone_desc: "Get your initial copy for the adventure.",
             sum_fetch_title: "Peek",
-            sum_fetch_desc: "Look if there are news without downloading them.",
-            sum_pull_title: "Update",
-            sum_pull_desc: "Download and merge news to your code.",
+            sum_fetch_desc:
+              "Check from afar if there are new points of interest on the master map.",
+            sum_pull_title: "Update the map",
+            sum_pull_desc:
+              "Download and merge your map with others' discoveries",
+            sum_team_push_title: "Mark the treasure",
+            sum_team_push_desc: "Add your 'X' to the shared map",
             team_summary_desc:
-              "You know how to work alone and how to collaborate with an entire team without making disasters.",
+              "You know how to work alone and how to collaborate with an entire team without making disasters",
             restart: "Restart from the beginning",
           },
         },
@@ -247,12 +251,16 @@ i18n
             pull_title: "Scaricare e Unire (Pull)",
             pull_human:
               '"Ok, scarica le novità e uniscile subito al mio lavoro."',
-            sum_clone_title: "Copia Iniziale",
-            sum_clone_desc: "Scarichi il progetto per la prima volta.",
+            sum_clone_title: "Prendi la mappa",
+            sum_clone_desc: "Ottieni la tua copia iniziale per l'avventura.",
             sum_fetch_title: "Sbircia",
-            sum_fetch_desc: "Guardi se ci sono novità senza scaricarle.",
-            sum_pull_title: "Aggiorna",
-            sum_pull_desc: "Scarichi e unisci le novità al tuo codice.",
+            sum_fetch_desc:
+              "Guarda da lontano se ci sono nuovi punti d'interesse sulla mappa master.",
+            sum_pull_title: "Aggiorna la mappa",
+            sum_pull_desc:
+              "Scarichi e unisci la tua mappa con le scoperte degli altri",
+            sum_team_push_title: "Segna il tesoro",
+            sum_team_push_desc: "Aggiungi la tua 'X' alla mappa condivisa",
             team_summary_desc:
               "Sai come lavorare da solo e come collaborare con un intero team senza fare disastri.",
             restart: "Ricomincia dall'inizio",
