@@ -33,28 +33,28 @@ export const TerminalGame: React.FC<MiniGameProps> = ({
     {
       command: "git init",
       successOutput: "Initialized empty Git repository.",
-      story: t("slides.game.basic.step1.story"),
-      hint: t("slides.game.basic.step1.hint"),
+      story: t("game.level.basic.step1.story"),
+      hint: t("game.level.basic.step1.hint"),
     },
     {
       command: "git add pensieri-croccanti.txt",
       regex: /^git add (\.|pensieri-croccanti\.txt)$/,
       successOutput: "pensieri-croccanti added to stage.",
-      story: t("slides.game.basic.step2.story"),
-      hint: t("slides.game.basic.step2.hint"),
+      story: t("game.level.basic.step2.story"),
+      hint: t("game.level.basic.step2.hint"),
     },
     {
       command: "git commit -m aggiunta un po di croccantezza",
       regex: /^git commit -m ".+"$/,
       successOutput: "[main (root-commit)] crunchiness committed!",
-      story: t("slides.game.basic.step3.story"),
-      hint: t("slides.game.basic.step3.hint"),
+      story: t("game.level.basic.step3.story"),
+      hint: t("game.level.basic.step3.hint"),
     },
     {
       command: "git push",
       successOutput: "Toaster's thoughts are now in the cloud.",
-      story: t("slides.game.basic.step4.story"),
-      hint: t("slides.game.basic.step4.hint"),
+      story: t("game.level.basic.step4.story"),
+      hint: t("game.level.basic.step4.hint"),
     },
   ];
 
@@ -63,28 +63,28 @@ export const TerminalGame: React.FC<MiniGameProps> = ({
       command: "git checkout -b feat/pizza",
       regex: /^git checkout -b [\w/-]+$/,
       successOutput: "Switched to a new branch 'feat/pizza'",
-      story: t("slides.game.branching.step1.story"),
-      hint: t("slides.game.branching.step1.hint"),
+      story: t("game.level..branching.step1.story"),
+      hint: t("game.level..branching.step1.hint"),
     },
     {
       command: 'git commit -m "Add pineapple"',
       regex: /^git commit -m ".+"$/,
       successOutput:
         "Commit successful! Pineapple added (Splinter might not like it).",
-      story: t("slides.game.branching.step2.story"),
-      hint: t("slides.game.branching.step2.hint"),
+      story: t("game.level.branching.step2.story"),
+      hint: t("game.level.branching.step2.hint"),
     },
     {
       command: "git checkout main",
       successOutput: "Switched to branch 'main'",
-      story: t("slides.game.branching.step3.story"),
-      hint: t("slides.game.branching.step3.hint"),
+      story: t("game.level.branching.step3.story"),
+      hint: t("game.level.branching.step3.hint"),
     },
     {
       command: "git merge feat/pizza",
       successOutput: "Updating main... feat/pizza merged successfully!",
-      story: t("slides.game.branching.step4.story"),
-      hint: t("slides.game.branching.step4.hint"),
+      story: t("game.level.branching.step4.story"),
+      hint: t("game.level.branching.step4.hint"),
     },
   ];
 
@@ -129,7 +129,7 @@ export const TerminalGame: React.FC<MiniGameProps> = ({
         setIsComplete(true);
         newHistory.push({
           type: "story" as const,
-          text: t("slides.game.accomplished"),
+          text: t("game.level.complete"),
         });
       }
     } else {
@@ -193,8 +193,8 @@ export const TerminalGame: React.FC<MiniGameProps> = ({
             </div>
             <p className='text-emerald-500 font-bold text-xl animate-pulse'>
               {mission === "basics"
-                ? t("slides.game.basic_complete")
-                : t("slides.game.branching_complete")}
+                ? t("game.level.basic_complete")
+                : t("game.level.branching_complete")}
             </p>
             <button
               onClick={onComplete}
