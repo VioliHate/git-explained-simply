@@ -60,8 +60,8 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
       command: "git checkout -b feat/pizza",
       regex: /^git checkout -b [\w/-]+$/,
       successOutput: "Switched to a new branch 'feat/pizza'",
-      story: t("game.level..branching.step1.story"),
-      hint: t("game.level..branching.step1.hint"),
+      story: t("game.level.branching.step1.story"),
+      hint: t("game.level.branching.step1.hint"),
     },
     {
       command: 'git commit -m "Add pineapple"',

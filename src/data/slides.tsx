@@ -13,6 +13,7 @@ import {
   Download,
   Upload,
   Eye,
+  Users,
 } from "lucide-react";
 import { Slide } from "../types/Slide";
 import { Terminal } from "../components/Terminal";
@@ -577,6 +578,419 @@ export const getSlides = (
           <p className='text-zinc-500'>{t("game.basics_desc")}</p>
         </header>
         <MiniGame mission='basics' onComplete={() => setCurrentSlide(12)} />
+      </section>
+    ),
+  },
+  {
+    id: 12,
+    title: `${t("slides.what_is_git")} (${t("slides.silly_example", { count: 5 })})`,
+    type: "concept",
+    content: (
+      <section className='grid md:grid-cols-2 gap-8 items-center'>
+        <article className='space-y-6'>
+          <h2 className='text-4xl font-bold leading-tight'>
+            {t("slides.splinter_wisdom")} 🐀
+          </h2>
+          <Card className='bg-emerald-50 border-emerald-200'>
+            <p className='text-lg text-zinc-700 italic'>
+              "{t("slides.splinter_desc")}"
+            </p>
+          </Card>
+        </article>
+        <aside className='relative'>
+          <div className='absolute inset-0 bg-emerald-500/5 rounded-3xl blur-3xl' />
+          <div className='relative bg-white p-8 rounded-3xl border border-zinc-200 shadow-xl flex flex-col items-center gap-6'>
+            <div className='flex gap-4'>
+              <div
+                className='w-12 h-12 bg-blue-500 rounded-full border-4 border-white shadow-md'
+                title='Leo'
+              />
+              <div
+                className='w-12 h-12 bg-red-500 rounded-full border-4 border-white shadow-md'
+                title='Raph'
+              />
+              <div
+                className='w-12 h-12 bg-purple-500 rounded-full border-4 border-white shadow-md'
+                title='Don'
+              />
+              <div
+                className='w-12 h-12 bg-orange-500 rounded-full border-4 border-white shadow-md'
+                title='Mikey'
+              />
+            </div>
+            <div className='text-center w-full'>
+              <p className='font-bold text-zinc-400 uppercase tracking-widest text-[10px] mb-2'>
+                Main Path (Master)
+              </p>
+              <div className='h-2 w-full bg-zinc-200 rounded-full relative overflow-hidden'>
+                <motion.div
+                  className='absolute inset-0 bg-emerald-500'
+                  initial={{ x: "-100%" }}
+                  animate={{ x: "0%" }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                />
+              </div>
+              <div className='mt-4 flex justify-around relative'>
+                {[
+                  { color: "bg-blue-500", label: "Leo" },
+                  { color: "bg-red-500", label: "Raph" },
+                  { color: "bg-purple-500", label: "Don" },
+                  { color: "bg-orange-500", label: "Mikey" },
+                ].map((t, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ y: 0 }}
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ delay: i * 0.2, repeat: Infinity }}
+                    className='flex flex-col items-center gap-1'
+                  >
+                    <div className={`w-3 h-3 ${t.color} rounded-full`} />
+                    <span className='text-[10px] font-bold text-zinc-400'>
+                      {t.label}
+                    </span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    ),
+  },
+  {
+    id: 13,
+    title: `${t("slides.what_is_git")} (${t("slides.silly_example", { count: 6 })})`,
+    type: "concept",
+    content: (
+      <section className='space-y-12'>
+        <header className='text-center space-y-4'>
+          <h2 className='text-4xl font-bold'>{t("slides.turtle_mission")}</h2>
+          <p className='text-zinc-500 text-lg'>
+            {t("slides.turtle_mission_desc")}
+          </p>
+        </header>
+
+        <div className='relative h-64 flex items-center justify-center bg-zinc-50 rounded-3xl border border-zinc-100 p-8'>
+          <div className='absolute w-full h-1 bg-zinc-300 left-0' />
+          <div className='flex justify-around w-full relative'>
+            <div className='flex flex-col items-center gap-2'>
+              <div className='w-4 h-4 bg-zinc-400 rounded-full' />
+              <span className='text-[10px] font-mono font-bold'>main</span>
+            </div>
+
+            {[
+              {
+                color: "bg-blue-500",
+                label: "feat/leo-katanas",
+                y: -60,
+                delay: 0,
+              },
+              {
+                color: "bg-red-500",
+                label: "feat/raph-sais",
+                y: 60,
+                delay: 0.1,
+              },
+              {
+                color: "bg-purple-500",
+                label: "feat/don-gadgets",
+                y: -100,
+                delay: 0.2,
+              },
+              {
+                color: "bg-orange-500",
+                label: "feat/mikey-pizza",
+                y: 100,
+                delay: 0.3,
+              },
+            ].map((b, i) => (
+              <motion.div
+                key={i}
+                initial={{ y: 0, opacity: 0 }}
+                animate={{ y: b.y, opacity: 1 }}
+                transition={{ delay: b.delay, duration: 0.8, type: "spring" }}
+                className='flex flex-col items-center gap-2'
+              >
+                <div
+                  className={`h-16 w-0.5 ${b.color.replace("bg-", "bg-opacity-20 bg-")} border-dashed border-l-2`}
+                />
+                <div className={`w-4 h-4 ${b.color} rounded-full shadow-lg`} />
+                <span
+                  className={`text-[10px] font-mono font-bold ${b.color.replace("bg-", "text-")}`}
+                >
+                  {b.label}
+                </span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    ),
+  },
+  {
+    id: 14,
+    title: t("slides.commands"),
+    type: "terminal",
+    content: (
+      <section className='space-y-8'>
+        <header className='flex items-center gap-4 mb-4'>
+          <div className='p-3 bg-zinc-900 rounded-xl'>
+            <TerminalIcon className='text-white w-6 h-6' />
+          </div>
+          <div>
+            <h2 className='text-3xl font-bold'>
+              {t("slides.training_tunnel_title")}
+            </h2>
+            <p className='text-zinc-500'>{t("slides.training_tunnel_desc")}</p>
+          </div>
+        </header>
+
+        <div className='grid md:grid-cols-2 gap-8'>
+          <article className='space-y-4'>
+            <h3 className='text-lg font-bold'>
+              1. {t("slides.branch_command_title")}
+            </h3>
+            <Terminal
+              command='git checkout -b feat/leo-training'
+              output={["Switched to a new branch 'feat/leo-training'"]}
+            />
+            <p className='text-zinc-600 text-xs italic'>
+              {t("slides.branch_command_human")}
+            </p>
+          </article>
+
+          <article className='space-y-4'>
+            <h3 className='text-lg font-bold'>2. Switch Branch</h3>
+            <Terminal
+              command='git checkout main'
+              output={["Switched to branch 'main'"]}
+            />
+            <p className='text-zinc-600 text-xs italic'>
+              {t("slides.switch_branch_human")}
+            </p>
+          </article>
+        </div>
+
+        <article className='space-y-4'>
+          <h3 className='text-lg font-bold'>3. {t("slides.merge_lair")}</h3>
+          <Terminal
+            command='git merge feat/leo-training'
+            output={[
+              "Updating a1b2c3d..e5f6g7h",
+              "Fast-forward",
+              " training_manual.md | 5 +++++",
+              " 1 file changed, 5 insertions(+)",
+            ]}
+          />
+          <p className='text-zinc-600 text-xs italic'>
+            {t("slides.merge_human")}
+          </p>
+        </article>
+      </section>
+    ),
+  },
+  {
+    id: 15,
+    title: t("slides.conflict_title"),
+    type: "terminal",
+    content: (
+      <section className='space-y-8'>
+        <header className='flex items-center gap-4'>
+          <div className='p-3 bg-red-100 rounded-xl'>
+            <AlertCircle className='text-red-600 w-6 h-6' />
+          </div>
+          <div>
+            <h2 className='text-3xl font-bold'>
+              {t("slides.conflict_title")} 🍕
+            </h2>
+            <p className='text-zinc-500'>{t("slides.conflict_desc")}</p>
+          </div>
+        </header>
+
+        <Terminal
+          command='git merge feat/raph-pizza'
+          output={[
+            "Auto-merging pizza_order.md",
+            "CONFLICT (content): Merge conflict in pizza_order.md",
+            "Automatic merge failed; fix conflicts and then commit the result.",
+          ]}
+        />
+
+        <Card className='bg-zinc-900 text-zinc-300 p-6 font-mono text-xs leading-relaxed'>
+          <p className='text-zinc-500'># pizza_order.md</p>
+          <p className='text-red-400'>{"<<<<<<< HEAD"}</p>
+          <p>Leo: Pepperoni</p>
+          <p className='text-red-400'>{"======="}</p>
+          <p>Raph: Mushrooms</p>
+          <p className='text-red-400'>{">>>>>>> feat/raph-pizza"}</p>
+        </Card>
+
+        <p className='text-zinc-600 text-sm italic'>
+          {t("slides.conflict_solve")}
+        </p>
+      </section>
+    ),
+  },
+  {
+    id: 16,
+    title: t("slides.story_recap_title"),
+    type: "concept",
+    content: (
+      <section className='space-y-8'>
+        <header className='text-center space-y-4'>
+          <h2 className='text-4xl font-bold'>
+            {t("slides.story_recap_title")} 🐢
+          </h2>
+          <p className='text-zinc-500 text-lg'>
+            {t("slides.story_recap_desc")}
+          </p>
+        </header>
+
+        <div className='grid md:grid-cols-2 gap-6'>
+          <Card className='p-6 space-y-4 border-l-4 border-l-blue-500'>
+            <h4 className='font-bold'>1. Leo's Mission</h4>
+            <ul className='text-sm space-y-2 text-zinc-600 list-none p-0'>
+              <li>
+                •{" "}
+                <code className='bg-zinc-100 px-1 rounded'>
+                  git checkout -b leo-mission
+                </code>
+              </li>
+              <li>• Leo trains hard (commits code)</li>
+              <li>
+                •{" "}
+                <code className='bg-zinc-100 px-1 rounded'>
+                  git push origin leo-mission
+                </code>
+              </li>
+            </ul>
+          </Card>
+          <Card className='p-6 space-y-4 border-l-4 border-l-red-500'>
+            <h4 className='font-bold'>2. Raph's Mission</h4>
+            <ul className='text-sm space-y-2 text-zinc-600 list-none p-0'>
+              <li>
+                •{" "}
+                <code className='bg-zinc-100 px-1 rounded'>
+                  git checkout -b raph-mission
+                </code>
+              </li>
+              <li>• Raph trains hard (commits code)</li>
+              <li>
+                •{" "}
+                <code className='bg-zinc-100 px-1 rounded'>
+                  git push origin raph-mission
+                </code>
+              </li>
+            </ul>
+          </Card>
+        </div>
+
+        <article className='bg-emerald-50 border border-emerald-200 p-6 rounded-3xl flex items-center gap-6'>
+          <div className='p-4 bg-emerald-500 rounded-full text-white'>
+            <Users className='w-8 h-8' />
+          </div>
+          <div>
+            <h4 className='font-bold text-emerald-900'>
+              {t("slides.reunion_title")}
+            </h4>
+            <p
+              className='text-sm text-emerald-700'
+              dangerouslySetInnerHTML={{ __html: t("slides.reunion_desc") }}
+            />
+          </div>
+        </article>
+      </section>
+    ),
+  },
+  {
+    id: 17,
+    title: t("slides.summary_title"),
+    type: "summary",
+    content: (
+      <section className='space-y-8'>
+        <ul className='grid grid-cols-1 md:grid-cols-2 gap-4 list-none p-0'>
+          <Card as='li' className='flex items-start gap-4'>
+            <div
+              className='p-2 bg-blue-100 rounded-lg text-blue-600 font-bold font-mono'
+              aria-hidden='true'
+            >
+              BRANCH
+            </div>
+            <div>
+              <h4 className='font-bold'>{t("slides.sum_branch_title")}</h4>
+              <p className='text-zinc-500 text-sm'>
+                {t("slides.sum_branch_desc")}
+              </p>
+            </div>
+          </Card>
+          <Card as='li' className='flex items-start gap-4'>
+            <div
+              className='p-2 bg-purple-100 rounded-lg text-purple-600 font-bold font-mono'
+              aria-hidden='true'
+            >
+              SWITCH
+            </div>
+            <div>
+              <h4 className='font-bold'>{t("slides.sum_switch_title")}</h4>
+              <p className='text-zinc-500 text-sm'>
+                {t("slides.sum_switch_desc")}
+              </p>
+            </div>
+          </Card>
+          <Card as='li' className='flex items-start gap-4'>
+            <div
+              className='p-2 bg-emerald-100 rounded-lg text-emerald-600 font-bold font-mono'
+              aria-hidden='true'
+            >
+              MERGE
+            </div>
+            <div>
+              <h4 className='font-bold'>{t("slides.sum_merge_title")}</h4>
+              <p className='text-zinc-500 text-sm'>
+                {t("slides.sum_merge_desc")}
+              </p>
+            </div>
+          </Card>
+          <Card as='li' className='flex items-start gap-4'>
+            <div
+              className='p-2 bg-red-100 rounded-lg text-red-600 font-bold font-mono'
+              aria-hidden='true'
+            >
+              CONFLICT
+            </div>
+            <div>
+              <h4 className='font-bold'>{t("slides.sum_conflict_title")}</h4>
+              <p className='text-zinc-500 text-sm'>
+                {t("slides.sum_conflict_desc")}
+              </p>
+            </div>
+          </Card>
+        </ul>
+
+        <article className='bg-zinc-900 text-white p-8 rounded-3xl text-center space-y-4'>
+          <h3 className='text-2xl font-bold'>Cowabunga! 🐢</h3>
+          <p className='text-zinc-400'>{t("slides.team_summary_desc")}</p>
+          <button
+            onClick={() => setCurrentSlide(18)}
+            className='bg-emerald-500 text-white px-6 py-2 rounded-full font-bold hover:bg-emerald-600 transition-colors'
+          >
+            {t("slides.game_branching_title")} →
+          </button>
+        </article>
+      </section>
+    ),
+  },
+  {
+    id: 18,
+    title: t("game.summary"),
+    type: "terminal",
+    content: (
+      <section className='space-y-6'>
+        <header className='text-center space-y-2'>
+          <h2 className='text-3xl font-bold'>{t("game.branching_title")} 🥷</h2>
+          <p className='text-zinc-500'>{t("game.branching_desc")}</p>
+        </header>
+        <MiniGame mission='branching' onComplete={() => setCurrentSlide(0)} />
       </section>
     ),
   },
