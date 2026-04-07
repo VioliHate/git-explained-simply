@@ -16,10 +16,7 @@ interface GameStep {
   story: string;
 }
 
-export const TerminalGame: React.FC<MiniGameProps> = ({
-  mission,
-  onComplete,
-}) => {
+export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
   const { t } = useTranslation();
   const [input, setInput] = useState("");
   const [history, setHistory] = useState<

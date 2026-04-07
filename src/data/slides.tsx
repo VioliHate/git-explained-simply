@@ -19,6 +19,7 @@ import { Terminal } from "../components/Terminal";
 import { Card } from "../components/Card";
 import { Highlight } from "../components/Highlight";
 import { TFunction } from "i18next";
+import { MiniGame } from "../components/MiniGame";
 
 export const getSlides = (
   setCurrentSlide: (index: number) => void,
@@ -562,6 +563,20 @@ export const getSlides = (
           <h3 className='text-2xl font-bold'>{t("summary.team_title")} 🤝</h3>
           <p className='text-zinc-400'>{t("summary.team_desc")}</p>
         </article>
+      </section>
+    ),
+  },
+  {
+    id: 11,
+    title: t("game.summary"),
+    type: "terminal",
+    content: (
+      <section className='space-y-6'>
+        <header className='text-center space-y-2'>
+          <h2 className='text-3xl font-bold'>{t("game.basics_title")} 🍞</h2>
+          <p className='text-zinc-500'>{t("game.basics_desc")}</p>
+        </header>
+        <MiniGame mission='basics' onComplete={() => setCurrentSlide(12)} />
       </section>
     ),
   },

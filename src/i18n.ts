@@ -141,13 +141,14 @@ i18n
               "You know how to work alone and how to collaborate with an entire team without making disasters",
           },
           game: {
+            summary: "Mini-Game",
             basics_title: "Mini-Game: The Sentient Toaster",
             basics_desc:
               "Help a toaster having an existential crisis save his thoughts before he burns himself!",
             branching_title: "Mini-Game: Ninja Training",
             branching_desc: "Master the art of branching and merging!",
             level: {
-              accomplished: "MISSION COMPLETE! 🏆",
+              complete: "MISSION COMPLETE! 🏆",
               basic_complete: "CRUNCHYNESSIS SAFE!",
               branching_complete: "COWABUNGA! 🐢",
               basic: {
@@ -307,13 +308,14 @@ i18n
               "Sai come lavorare da solo e come collaborare con un intero team senza fare disastri.",
           },
           game: {
+            summary: "Mini-Gioco",
             basics_title: "Mini-Gioco: Il Tostapane Senziente",
             basics_desc:
               "Aiuta un tostapane in piena crisi esistenziale a salvare i suoi pensieri prima che si bruci!",
             branching_title: "Mini-Gioco: Allenamento Ninja",
             branching_desc: "Domina l'arte dei branch e del merge!",
             level: {
-              accomplished: "MISSIONE COMPIUTA! 🏆",
+              complete: "MISSIONE COMPIUTA! 🏆",
               basic_complete: "LA CROCCANTEZZA È SALVA!",
               branching_complete: "COWABUNGA! 🐢",
               basic: {
