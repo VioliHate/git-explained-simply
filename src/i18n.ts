@@ -140,6 +140,40 @@ i18n
             team_desc:
               "You know how to work alone and how to collaborate with an entire team without making disasters",
           },
+          game: {
+            basics_title: "Mini-Game: The Sentient Toaster",
+            basics_desc:
+              "Help a toaster having an existential crisis save his thoughts before he burns himself!",
+            branching_title: "Mini-Game: Ninja Training",
+            branching_desc: "Master the art of branching and merging!",
+            level: {
+              accomplished: "MISSION COMPLETE! 🏆",
+              basic_complete: "CRUNCHYNESSIS SAFE!",
+              branching_complete: "COWABUNGA! 🐢",
+              basic: {
+                step1: {
+                  story:
+                    "Mission: Your toaster has become conscious and is writing a file. Initialize a Git repository to save its first thoughts.",
+                  hint: "Create the warehouse for the toaster's thoughts.",
+                },
+                step2: {
+                  story:
+                    "The toaster created a file called pensieri-croccanti.txt. Add it to the staging area.",
+                  hint: "Put your thoughts in the box.",
+                },
+                step3: {
+                  story:
+                    "Commit with a message that respects the toaster's thinking.",
+                  hint: "Save the crunch.",
+                },
+                step4: {
+                  story:
+                    "Send your toaster file to the cloud so it can live forever (or until the next power surge).",
+                  hint: "Load the thought of the toaster.",
+                },
+              },
+            },
+          },
         },
       },
       it: {
@@ -271,6 +305,40 @@ i18n
             team_title: "Ora sei un Team Player!",
             team_desc:
               "Sai come lavorare da solo e come collaborare con un intero team senza fare disastri.",
+          },
+          game: {
+            basics_title: "Mini-Gioco: Il Tostapane Senziente",
+            basics_desc:
+              "Aiuta un tostapane in piena crisi esistenziale a salvare i suoi pensieri prima che si bruci!",
+            branching_title: "Mini-Gioco: Allenamento Ninja",
+            branching_desc: "Domina l'arte dei branch e del merge!",
+            level: {
+              accomplished: "MISSIONE COMPIUTA! 🏆",
+              basic_complete: "LA CROCCANTEZZA È SALVA!",
+              branching_complete: "COWABUNGA! 🐢",
+              basic: {
+                step1: {
+                  story:
+                    "Missione: Il tuo tostapane ha preso coscienza e sta scrivendo un file. Inizializza un repository Git per salvare i suoi primi pensieri.",
+                  hint: "Crea il magazzino per i pensieri del tostapane.",
+                },
+                step2: {
+                  story:
+                    "Il tostapane ha scritto un file chiamato pensieri-croccanti.txt. Aggiungilo all'area di stage.",
+                  hint: "Metti i pensieri nella scatola.",
+                },
+                step3: {
+                  story:
+                    "Fai il commit con un messaggio che rispetti il pensiero del tostapane.",
+                  hint: "Salva la croccantezza.",
+                },
+                step4: {
+                  story:
+                    "Invia il file del tostapane nel cloud così potrà vivere per sempre (o fino al prossimo sbalzo di corrente).",
+                  hint: "Carica il pensiero del tostapane.",
+                },
+              },
+            },
           },
         },
       },
