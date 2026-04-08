@@ -123,6 +123,12 @@ i18n
               "A Branch is like a separate tunnel in the sewers. You can do your thing without blocking the main path.",
             training_tunnel_title: "Training in the Tunnel",
             training_tunnel_desc: "How to move between branches.",
+            branch_command_title: "Create your tunnel",
+            branch_command_human:
+              "I'm going to work on this specific task in my own space.",
+            switch_branch: "Switch tunnel",
+            switch_branch_human:
+              "I\'m going back to the Lair to see the Master Plan.",
           },
           summary: {
             title: "Summary for lazy people #{{count}}",
@@ -307,6 +313,11 @@ i18n
               "Un Branch è come un tunnel separato nelle fogne. Puoi fare le tue cose senza bloccare il percorso principale.",
             training_tunnel_title: "Allenamento nel Tunnel",
             training_tunnel_desc: "Come spostarsi tra i branch.",
+            branch_command_title: "Crea il tuo tunnel",
+            branch_command_human:
+              "Lavorerò su questo compito specifico nel mio spazio personale.",
+            switch_branch: "Spostati di tunnel",
+            switch_branch_human: "Torno al Rifugio per vedere il Piano Maestro",
           },
           summary: {
             title: "Riassunto per pigri #{{count}}",

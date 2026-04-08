@@ -823,7 +823,9 @@ export const getSlides = (
           </article>
 
           <article className='space-y-4'>
-            <h3 className='text-lg font-bold'>2. Switch Branch</h3>
+            <h3 className='text-lg font-bold'>
+              2. {t("slides.switch_branch")}
+            </h3>
             <Terminal
               command='git checkout main'
               output={["Switched to branch 'main'"]}
