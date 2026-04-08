@@ -129,6 +129,9 @@ i18n
             switch_branch: "Switch tunnel",
             switch_branch_human:
               "I\'m going back to the Lair to see the Master Plan.",
+            merge_lair: "Back to the Lair (Merge)",
+            merge_human:
+              "Leo has finished training! His new moves are now in the Master Plan.",
           },
           summary: {
             title: "Summary for lazy people #{{count}}",
@@ -318,6 +321,9 @@ i18n
               "Lavorerò su questo compito specifico nel mio spazio personale.",
             switch_branch: "Spostati di tunnel",
             switch_branch_human: "Torno al Rifugio per vedere il Piano Maestro",
+            merge_lair: "Ritorno al Rifugio (Merge)",
+            merge_human:
+              "Leonardo ha finito l\'allenamento! Le sue nuove mosse sono ora nel Piano Maestro.",
           },
           summary: {
             title: "Riassunto per pigri #{{count}}",
