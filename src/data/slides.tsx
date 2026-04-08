@@ -583,17 +583,17 @@ export const getSlides = (
   },
   {
     id: 12,
-    title: `${t("slides.what_is_git")} (${t("slides.silly_example", { count: 5 })})`,
+    title: `${t("slides.concepts", { count: 5 })}`,
     type: "concept",
     content: (
       <section className='grid md:grid-cols-2 gap-8 items-center'>
         <article className='space-y-6'>
           <h2 className='text-4xl font-bold leading-tight'>
-            {t("slides.splinter_wisdom")} 🐀
+            {t("slide.splinter_wisdom")} 🐀
           </h2>
           <Card className='bg-emerald-50 border-emerald-200'>
             <p className='text-lg text-zinc-700 italic'>
-              "{t("slides.splinter_desc")}"
+              "{t("slides.splinter_says")}"
             </p>
           </Card>
         </article>
@@ -603,19 +603,19 @@ export const getSlides = (
             <div className='flex gap-4'>
               <div
                 className='w-12 h-12 bg-blue-500 rounded-full border-4 border-white shadow-md'
-                title='Leo'
+                title={t("turtle.leo")}
               />
               <div
                 className='w-12 h-12 bg-red-500 rounded-full border-4 border-white shadow-md'
-                title='Raph'
+                title={t("turtle.raph")}
               />
               <div
                 className='w-12 h-12 bg-purple-500 rounded-full border-4 border-white shadow-md'
-                title='Don'
+                title={t("turtle.donnie")}
               />
               <div
                 className='w-12 h-12 bg-orange-500 rounded-full border-4 border-white shadow-md'
-                title='Mikey'
+                title={t("turtle.mikey")}
               />
             </div>
             <div className='text-center w-full'>
@@ -659,7 +659,7 @@ export const getSlides = (
   },
   {
     id: 13,
-    title: `${t("slides.what_is_git")} (${t("slides.silly_example", { count: 6 })})`,
+    title: `${t("slides.concepts", { count: 6 })}`,
     type: "concept",
     content: (
       <section className='space-y-12'>

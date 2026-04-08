@@ -141,7 +141,7 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
   };
 
   return (
-    <div className='flex flex-col h-[500px] bg-zinc-950 rounded-3xl border border-zinc-800 overflow-hidden shadow-2xl'>
+    <div className='flex flex-col h-125 bg-zinc-950 rounded-3xl border border-zinc-800 overflow-hidden shadow-2xl'>
       <header className='bg-zinc-900 p-4 border-b border-zinc-800 flex justify-between items-center'>
         <div className='flex items-center gap-2'>
           <TerminalIcon className='w-4 h-4 text-emerald-500' />

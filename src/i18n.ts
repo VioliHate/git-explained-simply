@@ -139,13 +139,16 @@ i18n
             team_title: "Now you are a Team Player!",
             team_desc:
               "You know how to work alone and how to collaborate with an entire team without making disasters",
+            splinter_wisdom: "Splinter\'s Wisdom",
+            splinter_says:
+              "To defeat the Foot Clan, we must divide and conquer. Each of you needs your own space to train without hitting your brothers.",
           },
           game: {
             summary: "Mini-Game",
-            basics_title: "Mini-Game: The Sentient Toaster",
+            basics_title: "The Sentient Toaster",
             basics_desc:
               "Help a toaster having an existential crisis save his thoughts before he burns himself!",
-            branching_title: "Mini-Game: Ninja Training",
+            branching_title: "Ninja Training",
             branching_desc: "Master the art of branching and merging!",
             level: {
               complete: "MISSION COMPLETE! 🏆",
@@ -172,6 +175,12 @@ i18n
                     "Send your toaster file to the cloud so it can live forever (or until the next power surge).",
                   hint: "Load the thought of the toaster.",
                 },
+              },
+              turtle: {
+                mikey: "Mikey",
+                raph: "Raph",
+                donnie: "Donnie",
+                leonard: "Leo",
               },
             },
           },
@@ -279,6 +288,9 @@ i18n
             pull_title: "Scaricare e Unire (Pull)",
             pull_human:
               '"Ok, scarica le novità e uniscile subito al mio lavoro."',
+            splinter_wisdom: "La Saggezza di Splinter",
+            splinter_says:
+              "Per sconfiggere il Clan del Piede, dobbiamo dividere e conquistare. Ognuno di voi ha bisogno del proprio spazio per allenarsi senza colpire i fratelli.",
           },
           summary: {
             title: "Riassunto per pigri #{{count}}",
@@ -309,10 +321,10 @@ i18n
           },
           game: {
             summary: "Mini-Gioco",
-            basics_title: "Mini-Gioco: Il Tostapane Senziente",
+            basics_title: "Il Tostapane Senziente",
             basics_desc:
               "Aiuta un tostapane in piena crisi esistenziale a salvare i suoi pensieri prima che si bruci!",
-            branching_title: "Mini-Gioco: Allenamento Ninja",
+            branching_title: "Allenamento Ninja",
             branching_desc: "Domina l'arte dei branch e del merge!",
             level: {
               complete: "MISSIONE COMPIUTA! 🏆",
@@ -339,6 +351,32 @@ i18n
                     "Invia il file del tostapane nel cloud così potrà vivere per sempre (o fino al prossimo sbalzo di corrente).",
                   hint: "Carica il pensiero del tostapane.",
                 },
+              },
+              branching: {
+                step1: {
+                  story:
+                    "Missione: Michelangelo vuole provare un nuovo condimento. Crea un nuovo branch chiamato 'feat/pizza'",
+                  hint: "Crea un nuovo tunnel per la tua missione.",
+                },
+                step2: {
+                  story: "Aggiungi l'ananas e salva i tuoi progressi.",
+                  hint: "Salva le modifiche nel nuovo branch.",
+                },
+                step3: {
+                  story:
+                    "Torna al branch main per mostrare il tuo lavoro alla squadra.",
+                  hint: "Torna al rifugio principale.",
+                },
+                step4: {
+                  story: "Unisci il branch della pizza nel main. Cowabunga!",
+                  hint: "Unisci la tua missione nel piano maestro.",
+                },
+              },
+              turtle: {
+                mikey: "Michelangelo",
+                raph: "Raffaello",
+                donnie: "Donatello",
+                leo: "Leonardo",
               },
             },
           },
