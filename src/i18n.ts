@@ -63,6 +63,9 @@ i18n
               'You press "Save Game". Now that moment is carved in stone.',
             base_commands: "Base Commands",
             base_commands_desc: "Few, simple, powerful.",
+            share_commands: "Sharing Commands",
+            share_commands_desc:
+              "Synchronize and collaborate with the remote repository",
             init_title: "Initialize a project",
             init_output:
               "Initialized empty Git repository in /Users/me/project/.git/",
@@ -118,6 +121,8 @@ i18n
             turtle_mission: "Each Turtle, a Mission",
             turtle_mission_desc:
               "A Branch is like a separate tunnel in the sewers. You can do your thing without blocking the main path.",
+            training_tunnel_title: "Training in the Tunnel",
+            training_tunnel_desc: "How to move between branches.",
           },
           summary: {
             title: "Summary for lazy people #{{count}}",
@@ -239,6 +244,9 @@ i18n
               'Premi "Salva Partita". Ora quel momento è scolpito nella pietra.',
             base_commands: "I Comandi Base",
             base_commands_desc: "Pochi, semplici, potenti.",
+            share_commands: "Comandi di Condivisione",
+            share_commands_desc:
+              "Sincronizza e collabora con il repository remoto",
             init_title: "Inizializzare un progetto",
             init_output:
               "Initialized empty Git repository in /Users/me/progetto/.git/",
@@ -297,6 +305,8 @@ i18n
             turtle_mission: "Ogni Tartaruga, una Missione",
             turtle_mission_desc:
               "Un Branch è come un tunnel separato nelle fogne. Puoi fare le tue cose senza bloccare il percorso principale.",
+            training_tunnel_title: "Allenamento nel Tunnel",
+            training_tunnel_desc: "Come spostarsi tra i branch.",
           },
           summary: {
             title: "Riassunto per pigri #{{count}}",

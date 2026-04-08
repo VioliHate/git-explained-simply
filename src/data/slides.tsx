@@ -423,12 +423,23 @@ export const getSlides = (
     content: (
       <section className='space-y-8'>
         <article className='space-y-4'>
-          <header className='flex justify-between items-end'>
+          <header className='flex items-center gap-4 mb-8'>
+            <div className='p-3 bg-zinc-900 rounded-xl'>
+              <TerminalIcon className='text-white w-6 h-6' />
+            </div>
+            <div>
+              <h2 className='text-3xl font-bold'>
+                {t("slides.share_commands")}
+              </h2>
+              <p className='text-zinc-500'>{t("slides.share_commands_desc")}</p>
+            </div>
+          </header>
+          <div className='flex justify-between items-end'>
             <h3 className='text-xl font-bold'>5. {t("slides.clone_title")}</h3>
             <code className='text-zinc-400 text-sm font-mono'>
               git clone &lt;url&gt;
             </code>
-          </header>
+          </div>
           <Terminal
             command='git clone https://github.com/amico/super-app.git'
             output={[
@@ -781,7 +792,7 @@ export const getSlides = (
   },
   {
     id: 14,
-    title: t("slides.commands"),
+    title: t("slides.terminal"),
     type: "terminal",
     content: (
       <section className='space-y-8'>
