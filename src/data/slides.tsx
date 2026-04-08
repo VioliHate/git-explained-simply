@@ -589,7 +589,7 @@ export const getSlides = (
       <section className='grid md:grid-cols-2 gap-8 items-center'>
         <article className='space-y-6'>
           <h2 className='text-4xl font-bold leading-tight'>
-            {t("slide.splinter_wisdom")} 🐀
+            {t("slides.splinter_wisdom")} 🐀
           </h2>
           <Card className='bg-emerald-50 border-emerald-200'>
             <p className='text-lg text-zinc-700 italic'>
@@ -632,10 +632,10 @@ export const getSlides = (
               </div>
               <div className='mt-4 flex justify-around relative'>
                 {[
-                  { color: "bg-blue-500", label: "Leo" },
-                  { color: "bg-red-500", label: "Raph" },
-                  { color: "bg-purple-500", label: "Don" },
-                  { color: "bg-orange-500", label: "Mikey" },
+                  { color: "bg-blue-500", label: t("turtle.leo") },
+                  { color: "bg-red-500", label: t("turtle.raph") },
+                  { color: "bg-purple-500", label: t("turtle.donnie") },
+                  { color: "bg-orange-500", label: t("turtle.mikey") },
                 ].map((t, i) => (
                   <motion.div
                     key={i}

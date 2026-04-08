@@ -112,6 +112,9 @@ i18n
             pull_title: "Download and Merge (Pull)",
             pull_human:
               '"Ok, download the news and merge them immediately with my work."',
+            splinter_wisdom: "Splinter's Wisdom",
+            splinter_says:
+              "To defeat the Foot Clan, we must divide and conquer. Each of you needs your own space to train without hitting your brothers.",
           },
           summary: {
             title: "Summary for lazy people #{{count}}",
@@ -139,9 +142,6 @@ i18n
             team_title: "Now you are a Team Player!",
             team_desc:
               "You know how to work alone and how to collaborate with an entire team without making disasters",
-            splinter_wisdom: "Splinter\'s Wisdom",
-            splinter_says:
-              "To defeat the Foot Clan, we must divide and conquer. Each of you needs your own space to train without hitting your brothers.",
           },
           game: {
             summary: "Mini-Game",
@@ -176,13 +176,13 @@ i18n
                   hint: "Load the thought of the toaster.",
                 },
               },
-              turtle: {
-                mikey: "Mikey",
-                raph: "Raph",
-                donnie: "Donnie",
-                leonard: "Leo",
-              },
             },
+          },
+          turtle: {
+            mikey: "Mikey",
+            raph: "Raph",
+            donnie: "Donnie",
+            leo: "Leo",
           },
         },
       },
@@ -372,13 +372,13 @@ i18n
                   hint: "Unisci la tua missione nel piano maestro.",
                 },
               },
-              turtle: {
-                mikey: "Michelangelo",
-                raph: "Raffaello",
-                donnie: "Donatello",
-                leo: "Leonardo",
-              },
             },
+          },
+          turtle: {
+            mikey: "Michelangelo",
+            raph: "Raffaello",
+            donnie: "Donatello",
+            leo: "Leonardo",
           },
         },
       },
