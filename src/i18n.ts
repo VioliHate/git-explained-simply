@@ -115,6 +115,9 @@ i18n
             splinter_wisdom: "Splinter's Wisdom",
             splinter_says:
               "To defeat the Foot Clan, we must divide and conquer. Each of you needs your own space to train without hitting your brothers.",
+            turtle_mission: "Each Turtle, a Mission",
+            turtle_mission_desc:
+              "A Branch is like a separate tunnel in the sewers. You can do your thing without blocking the main path.",
           },
           summary: {
             title: "Summary for lazy people #{{count}}",
@@ -291,6 +294,9 @@ i18n
             splinter_wisdom: "La Saggezza di Splinter",
             splinter_says:
               "Per sconfiggere il Clan del Piede, dobbiamo dividere e conquistare. Ognuno di voi ha bisogno del proprio spazio per allenarsi senza colpire i fratelli.",
+            turtle_mission: "Ogni Tartaruga, una Missione",
+            turtle_mission_desc:
+              "Un Branch è come un tunnel separato nelle fogne. Puoi fare le tue cose senza bloccare il percorso principale.",
           },
           summary: {
             title: "Riassunto per pigri #{{count}}",

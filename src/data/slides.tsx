@@ -670,59 +670,111 @@ export const getSlides = (
           </p>
         </header>
 
-        <div className='relative h-64 flex items-center justify-center bg-zinc-50 rounded-3xl border border-zinc-100 p-8'>
-          <div className='absolute w-full h-1 bg-zinc-300 left-0' />
-          <div className='flex justify-around w-full relative'>
-            <div className='flex flex-col items-center gap-2'>
-              <div className='w-4 h-4 bg-zinc-400 rounded-full' />
-              <span className='text-[10px] font-mono font-bold'>main</span>
-            </div>
+        <div className='relative h-80 w-full bg-zinc-50 rounded-3xl border border-zinc-100 p-8 flex items-center justify-center overflow-hidden'>
+          <svg
+            width='100%'
+            height='100%'
+            viewBox='0 0 800 300'
+            className='overflow-visible'
+          >
+            {/* Main Branch Line */}
+            <line
+              x1='50'
+              y1='150'
+              x2='750'
+              y2='150'
+              stroke='#d4d4d8'
+              strokeWidth='4'
+              strokeDasharray='8 4'
+            />
 
+            {/* Main Commits */}
+            {[50, 200, 350, 450, 600].map((x, i) => (
+              <circle key={i} cx={x} cy='150' r='6' fill='#71717a' />
+            ))}
+            <text
+              x='50'
+              y='130'
+              className='text-[14px] font-mono font-bold fill-zinc-400 uppercase tracking-widest'
+            >
+              Main Path (Lair)
+            </text>
+
+            {/* Branches */}
             {[
               {
-                color: "bg-blue-500",
+                color: "#3b82f6",
                 label: "feat/leo-katanas",
-                y: -60,
+                startX: 200,
+                endX: 350,
+                y: 40,
                 delay: 0,
               },
               {
-                color: "bg-red-500",
+                color: "#ef4444",
                 label: "feat/raph-sais",
-                y: 60,
-                delay: 0.1,
-              },
-              {
-                color: "bg-purple-500",
-                label: "feat/don-gadgets",
-                y: -100,
+                startX: 350,
+                endX: 450,
+                y: 220,
                 delay: 0.2,
               },
               {
-                color: "bg-orange-500",
+                color: "#a855f7",
+                label: "feat/don-gadgets",
+                startX: 450,
+                endX: 550,
+                y: 60,
+                delay: 0.4,
+              },
+              {
+                color: "#f97316",
                 label: "feat/mikey-pizza",
-                y: 100,
-                delay: 0.3,
+                startX: 600,
+                endX: 750,
+                y: 240,
+                delay: 0.6,
               },
             ].map((b, i) => (
-              <motion.div
-                key={i}
-                initial={{ y: 0, opacity: 0 }}
-                animate={{ y: b.y, opacity: 1 }}
-                transition={{ delay: b.delay, duration: 0.8, type: "spring" }}
-                className='flex flex-col items-center gap-2'
-              >
-                <div
-                  className={`h-16 w-0.5 ${b.color.replace("bg-", "bg-opacity-20 bg-")} border-dashed border-l-2`}
+              <g key={i}>
+                {/* Branch Path */}
+                <motion.path
+                  d={`M ${b.startX} 150 C ${b.startX + 50} ${b.y}, ${b.startX + 100} ${b.y}, ${b.endX} ${b.y}`}
+                  fill='none'
+                  stroke={b.color}
+                  strokeWidth='3'
+                  initial={{ pathLength: 0, opacity: 0 }}
+                  animate={{ pathLength: 1, opacity: 1 }}
+                  transition={{
+                    delay: b.delay,
+                    duration: 1,
+                    ease: "easeInOut",
+                  }}
                 />
-                <div className={`w-4 h-4 ${b.color} rounded-full shadow-lg`} />
-                <span
-                  className={`text-[10px] font-mono font-bold ${b.color.replace("bg-", "text-")}`}
+                {/* Branch Commit */}
+                <motion.circle
+                  cx={b.endX}
+                  cy={b.y}
+                  r='6'
+                  fill={b.color}
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: b.delay + 1, type: "spring" }}
+                />
+                {/* Branch Label */}
+                <motion.text
+                  x={b.endX + 12}
+                  y={b.y + 4}
+                  className='text-[14px] font-mono font-bold'
+                  style={{ fill: b.color }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: b.delay + 1.2 }}
                 >
                   {b.label}
-                </span>
-              </motion.div>
+                </motion.text>
+              </g>
             ))}
-          </div>
+          </svg>
         </div>
       </section>
     ),
