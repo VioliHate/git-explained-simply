@@ -132,6 +132,7 @@ i18n
             merge_lair: "Back to the Lair (Merge)",
             merge_human:
               "Leo has finished training! His new moves are now in the Master Plan.",
+            conflict_title: "The Pizza Conflict!",
           },
           summary: {
             title: "Summary for lazy people #{{count}}",
@@ -324,6 +325,7 @@ i18n
             merge_lair: "Ritorno al Rifugio (Merge)",
             merge_human:
               "Leonardo ha finito l\'allenamento! Le sue nuove mosse sono ora nel Piano Maestro.",
+            conflict_title: "Il Conflitto della Pizza!",
           },
           summary: {
             title: "Riassunto per pigri #{{count}}",
