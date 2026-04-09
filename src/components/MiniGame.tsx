@@ -36,28 +36,28 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
     {
       command: "git init",
       successOutput: "Initialized empty Git repository.",
-      story: t("game.level.basic.step1.story"),
-      hint: t("game.level.basic.step1.hint"),
+      story: "game.level.basic.step1.story",
+      hint: "game.level.basic.step1.hint",
     },
     {
       command: "git add pensieri-croccanti.txt",
       regex: /^git add (\.|pensieri-croccanti\.txt)$/,
       successOutput: "pensieri-croccanti added to stage.",
-      story: t("game.level.basic.step2.story"),
-      hint: t("game.level.basic.step2.hint"),
+      story: "game.level.basic.step2.story",
+      hint: "game.level.basic.step2.hint",
     },
     {
       command: "git commit -m aggiunta un po di croccantezza",
       regex: /^git commit -m ".+"$/,
       successOutput: "[main (root-commit)] crunchiness committed!",
-      story: t("game.level.basic.step3.story"),
-      hint: t("game.level.basic.step3.hint"),
+      story: "game.level.basic.step3.story",
+      hint: "game.level.basic.step3.hint",
     },
     {
       command: "git push",
       successOutput: "Toaster's thoughts are now in the cloud.",
-      story: t("game.level.basic.step4.story"),
-      hint: t("game.level.basic.step4.hint"),
+      story: "game.level.basic.step4.story",
+      hint: "game.level.basic.step4.hint",
     },
   ];
 
