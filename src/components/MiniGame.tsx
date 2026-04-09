@@ -25,13 +25,11 @@ interface HistoryItem {
 export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
   const { t } = useTranslation();
   const [input, setInput] = useState("");
-  const [history, setHistory] = useState<
-    { type: "cmd" | "out" | "story"; text?: string; key?: string }[]
-  >([]);
+  const [history, setHistory] = useState<HistoryItem[]>([]);
   const [currentStep, setCurrentStep] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const getStoryText = (key: string) => t(key);
+  const getTranslateText = (key: string) => t(key);
   const basicSteps: GameStep[] = [
     {
       command: "git init",
@@ -94,7 +92,7 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
   const steps = mission === "basics" ? basicSteps : branchingSteps;
 
   useEffect(() => {
-    if (history.length === 0 && steps.length > 0) {
+    if (history.length === 0) {
       setHistory([{ type: "story", text: steps[0].story }]);
     }
   }, [steps]);
@@ -132,7 +130,7 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
         setIsComplete(true);
         newHistory.push({
           type: "story" as const,
-          text: t("game.level.complete"),
+          text: "game.level.complete",
         });
       }
     } else {
@@ -181,8 +179,8 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
               {item.type === "cmd" && (
                 <span className='mr-2 text-zinc-600'>$</span>
               )}
-              {item.type === "story" && item.key
-                ? getStoryText(item.key)
+              {item.type === "story" && item.text
+                ? getTranslateText(item.text)
                 : item.text}
             </motion.div>
           ))}
@@ -232,7 +230,7 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
           <div className='flex items-center gap-4 text-[10px] uppercase font-bold tracking-widest text-zinc-500'>
             <div className='flex items-center gap-1'>
               <HelpCircle className='w-3 h-3' />
-              <span>Hint: {steps[currentStep].hint}</span>
+              <span>Hint: {getTranslateText(steps[currentStep].hint)}</span>
             </div>
           </div>
         </form>
