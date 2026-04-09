@@ -133,6 +133,16 @@ i18n
             merge_human:
               "Leo has finished training! His new moves are now in the Master Plan.",
             conflict_title: "The Pizza Conflict!",
+            conflict_desc:
+              "What happens if Leo and Raph both want the last slice of pizza in the same spot?",
+            conflict_solve:
+              "Git stops and asks you to choose. You open the file, decide if you want Leo's pepperoni or Raph's mushrooms (or both!), and then commit the peace treaty.",
+            story_recap_title: "The Great Sewer Mission",
+            story_recap_desc:
+              "Leo creates a tunnel (branch), trains his katanas, and then merges back to the Lair. Raph does the same with his sais. They check the Master Plan (Main) and celebrate with pizza!",
+            reunion_title: "The Reunion",
+            reunion_desc:
+              "Splinter reviews the Pull Requests, merges everything into <strong>main</strong>, and the sewer is safe again!",
           },
           summary: {
             title: "Summary for lazy people #{{count}}",
@@ -160,6 +170,16 @@ i18n
             team_title: "Now you are a Team Player!",
             team_desc:
               "You know how to work alone and how to collaborate with an entire team without making disasters",
+            branch_title: "Create a Tunnel",
+            branch_desc: "Work in your own space.",
+            switch_title: "Change Tunnel",
+            switch_desc: "Move between missions.",
+            merge_title: "Back to Lair",
+            merge_desc: "Merge your work to Main.",
+            conflict_title: "Pizza Peace",
+            conflict_desc: "Resolve conflicts manually.",
+            branch_lazy_desc:
+              "Now you know how to collaborate with an entire team without causing a disaster. (In Theory)",
           },
           game: {
             summary: "Mini-Game",
@@ -326,6 +346,16 @@ i18n
             merge_human:
               "Leonardo ha finito l\'allenamento! Le sue nuove mosse sono ora nel Piano Maestro.",
             conflict_title: "Il Conflitto della Pizza!",
+            conflict_desc:
+              "Cosa succede se Leonardo e Raffaello vogliono entrambi l'ultima fetta di pizza nello stesso punto?",
+            conflict_solve:
+              "Git si ferma e ti chiede di scegliere. Apri il file, decidi se vuoi il salamino di Leonardo o i funghi di Raffaello (o entrambi!), e poi committi il trattato di pace.",
+            story_recap_title: "La Grande Missione nelle Fogne",
+            story_recap_desc:
+              "Leonardo crea un tunnel (branch), allena le sue katane, e poi torna al Rifugio. Raffaello fa lo stesso con i suoi sai. Controllano il Piano Maestro (Main) e festeggiano con la pizza!",
+            reunion_title: "La Riunione",
+            reunion_desc:
+              "Splinter revisiona le Pull Request, unisce tutto nel <strong>main</strong>, e le fogne sono di nuovo al sicuro!",
           },
           summary: {
             title: "Riassunto per pigri #{{count}}",
@@ -353,6 +383,16 @@ i18n
             team_title: "Ora sei un Team Player!",
             team_desc:
               "Sai come lavorare da solo e come collaborare con un intero team senza fare disastri.",
+            branch_title: "Crea un Tunnel",
+            branch_desc: "Lavora nel tuo spazio.",
+            switch_title: "Cambia Tunnel",
+            switch_desc: "Spostati tra le missioni.",
+            merge_title: "Torna al Rifugio",
+            merge_desc: "Unisci il lavoro al Main.",
+            conflict_title: "Pace della Pizza",
+            conflict_desc: "Risolvi i conflitti a mano.",
+            branch_lazy_desc:
+              "Ora sai come collaborare con un intero team senza fare disastri. (in Teoria)",
           },
           game: {
             summary: "Mini-Gioco",

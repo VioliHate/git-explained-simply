@@ -898,7 +898,7 @@ export const getSlides = (
   },
   {
     id: 16,
-    title: t("slides.story_recap_title"),
+    title: "Branching Ninja",
     type: "concept",
     content: (
       <section className='space-y-8'>
@@ -969,7 +969,7 @@ export const getSlides = (
   },
   {
     id: 17,
-    title: t("slides.summary_title"),
+    title: `${t("summary.title", { count: 3 })}`,
     type: "summary",
     content: (
       <section className='space-y-8'>
@@ -982,9 +982,9 @@ export const getSlides = (
               BRANCH
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_branch_title")}</h4>
+              <h4 className='font-bold'>{t("summary.branch_title")}</h4>
               <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_branch_desc")}
+                {t("summary.branch_desc")}
               </p>
             </div>
           </Card>
@@ -996,9 +996,9 @@ export const getSlides = (
               SWITCH
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_switch_title")}</h4>
+              <h4 className='font-bold'>{t("summary.switch_title")}</h4>
               <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_switch_desc")}
+                {t("summary.switch_desc")}
               </p>
             </div>
           </Card>
@@ -1010,10 +1010,8 @@ export const getSlides = (
               MERGE
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_merge_title")}</h4>
-              <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_merge_desc")}
-              </p>
+              <h4 className='font-bold'>{t("summary.merge_title")}</h4>
+              <p className='text-zinc-500 text-sm'>{t("summary.merge_desc")}</p>
             </div>
           </Card>
           <Card as='li' className='flex items-start gap-4'>
@@ -1024,9 +1022,9 @@ export const getSlides = (
               CONFLICT
             </div>
             <div>
-              <h4 className='font-bold'>{t("slides.sum_conflict_title")}</h4>
+              <h4 className='font-bold'>{t("summary.conflict_title")}</h4>
               <p className='text-zinc-500 text-sm'>
-                {t("slides.sum_conflict_desc")}
+                {t("summary.conflict_desc")}
               </p>
             </div>
           </Card>
@@ -1034,12 +1032,12 @@ export const getSlides = (
 
         <article className='bg-zinc-900 text-white p-8 rounded-3xl text-center space-y-4'>
           <h3 className='text-2xl font-bold'>Cowabunga! 🐢</h3>
-          <p className='text-zinc-400'>{t("slides.team_summary_desc")}</p>
+          <p className='text-zinc-400'>{t("summary.branch_lazy_desc")}</p>
           <button
             onClick={() => setCurrentSlide(18)}
             className='bg-emerald-500 text-white px-6 py-2 rounded-full font-bold hover:bg-emerald-600 transition-colors'
           >
-            {t("slides.game_branching_title")} →
+            {t("game.branching_title")} →
           </button>
         </article>
       </section>
