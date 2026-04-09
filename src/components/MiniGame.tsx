@@ -16,16 +16,22 @@ interface GameStep {
   story: string;
 }
 
+interface HistoryItem {
+  type: "cmd" | "out" | "story";
+  text?: string;
+  key?: string;
+}
+
 export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
   const { t } = useTranslation();
   const [input, setInput] = useState("");
   const [history, setHistory] = useState<
-    { type: "cmd" | "out" | "story"; text: string }[]
+    { type: "cmd" | "out" | "story"; text?: string; key?: string }[]
   >([]);
   const [currentStep, setCurrentStep] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-
+  const getStoryText = (key: string) => t(key);
   const basicSteps: GameStep[] = [
     {
       command: "git init",
@@ -60,38 +66,38 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
       command: "git checkout -b feat/pizza",
       regex: /^git checkout -b [\w/-]+$/,
       successOutput: "Switched to a new branch 'feat/pizza'",
-      story: t("game.level.branching.step1.story"),
-      hint: t("game.level.branching.step1.hint"),
+      story: "game.level.branching.step1.story",
+      hint: "game.level.branching.step1.hint",
     },
     {
       command: 'git commit -m "Add pineapple"',
       regex: /^git commit -m ".+"$/,
       successOutput:
         "Commit successful! Pineapple added (Splinter might not like it).",
-      story: t("game.level.branching.step2.story"),
-      hint: t("game.level.branching.step2.hint"),
+      story: "game.level.branching.step2.story",
+      hint: "game.level.branching.step2.hint",
     },
     {
       command: "git checkout main",
       successOutput: "Switched to branch 'main'",
-      story: t("game.level.branching.step3.story"),
-      hint: t("game.level.branching.step3.hint"),
+      story: "game.level.branching.step3.story",
+      hint: "game.level.branching.step3.hint",
     },
     {
       command: "git merge feat/pizza",
       successOutput: "Updating main... feat/pizza merged successfully!",
-      story: t("game.level.branching.step4.story"),
-      hint: t("game.level.branching.step4.hint"),
+      story: "game.level.branching.step4.story",
+      hint: "game.level.branching.step4.hint",
     },
   ];
 
   const steps = mission === "basics" ? basicSteps : branchingSteps;
 
   useEffect(() => {
-    if (history.length === 0) {
+    if (history.length === 0 && steps.length > 0) {
       setHistory([{ type: "story", text: steps[0].story }]);
     }
-  }, []);
+  }, [steps]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -175,7 +181,9 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
               {item.type === "cmd" && (
                 <span className='mr-2 text-zinc-600'>$</span>
               )}
-              {item.text}
+              {item.type === "story" && item.key
+                ? getStoryText(item.key)
+                : item.text}
             </motion.div>
           ))}
         </AnimatePresence>

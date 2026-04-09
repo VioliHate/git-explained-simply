@@ -214,6 +214,27 @@ i18n
                   hint: "Load the thought of the toaster.",
                 },
               },
+              branching: {
+                step1: {
+                  story:
+                    "Mikey wants to try a new topping. Create a new branch called 'feat/pizza'.",
+                  hint: "Create a new tunnel for your mission",
+                },
+                step2: {
+                  story: "Add the pineapple and save your progress",
+                  hint: "Save your changes to the new branch.",
+                },
+                step3: {
+                  story:
+                    "Return to the main branch to show your work to the team.",
+                  hint: "Return to the main",
+                },
+                step4: {
+                  story:
+                    "Merge the pizza branch into the main branch. Cowabunga!",
+                  hint: "Merge your mission into the master plan.",
+                },
+              },
             },
           },
           turtle: {
