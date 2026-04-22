@@ -68,7 +68,7 @@ export const MiniGame: React.FC<MiniGameProps> = ({ mission, onComplete }) => {
       hint: "game.level.branching.step1.hint",
     },
     {
-      command: 'git commit -m "Add pineapple"',
+      command: 'git commit -m "Add ananas"',
       regex: /^git commit -m ".+"$/,
       successOutput:
         "Commit successful! Pineapple added (Splinter might not like it).",
